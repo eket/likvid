@@ -1,7 +1,7 @@
 {
-  "name": "skel",
+  "name": "likvid",
   "version": "0.0.0",
-  "main": "skel.js",
+  "main": "likvid.js",
   "dependencies": {
       "coffee-script": "*",
       "lodash": "*",
