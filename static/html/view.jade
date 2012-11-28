@@ -2,12 +2,12 @@ html
   head
     script(src='/static/js/lib/lodash.min.js')
 
+    script(src='/static/js/sprite.js')
+
     script(src='/static/js/view_helper.js')
     script(src='/static/js/view.js')
 
-    style
-      *{margin:0;padding:0}
-      #view-canvas{background:transparent;position:absolute;top:0;left:0}
-  body
+    link(href='/static/css/view.css', rel='stylesheet')
+  body(onload='_view.init()')
+    img#sprite-forma(class='sprite-preload', src='/static/art/forma-sketch.png')
     canvas#view-canvas
-    script(type="text/javascript") _view.init()
