@@ -1,7 +1,8 @@
-[API, _, VH] =
+[API, _, VH, S] =
   [window._view = {},
   window._,
-  window._view_helper]
+  window._view_helper,
+  window._sprite]
 
 # canvas width in pixels
 API.a = null
@@ -14,6 +15,7 @@ resize = ->
   [canvas.width, canvas.height] = [API.a, API.a]
   ___ "resized canvas to #{API.a}x#{API.a}"
 
+API.sprites = []
 # set up the html5 canvas and callbacks
 API.init = ->
   window.addEventListener 'resize', resize, no
