@@ -1,5 +1,5 @@
-_ = require('underscore')
-_.mixin(require('underscore.deferred'))
+_ = require 'underscore'
+_.mixin require 'underscore.deferred'
 
 ___ = -> console.log arguments...
 
